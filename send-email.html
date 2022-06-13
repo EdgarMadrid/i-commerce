@@ -39,6 +39,8 @@
             display: grid;
             grid-template-rows: auto 1fr auto;
             width: 360px;
+            justify-items: center;
+
         }
 
         .logo {
@@ -48,13 +50,13 @@
             display: none;
         }
 
-        .title{
+        .title {
             font-size: var(--lg);
             margin-bottom: 12px;
             text-align: center;
         }
 
-        .subtitle{
+        .subtitle {
             color: var(--very-light-pink);
             font-size: var(--md);
             font-weight: 300;
@@ -63,28 +65,25 @@
             text-align: center;
         }
 
-        .form{
-            display: flex;
-            flex-direction: column;
-        }
-
-        .label{
-            font-size: var(--sm);
-            font-weight: bold;
-            margin-bottom: 4px;
-        }
-
-        .input{
+        .email {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
             background-color: var(--text-input-field);
-            border: none;
-            border-radius: 8px;
-            height: 30px;
-            font-size: var(--md);
-            padding: 8px;
-            margin-bottom: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+
         }
 
-        .primary-button{
+        .email-img {
+            width: 80px;
+        }
+
+
+
+        .primary-button {
             background-color: var(--hospital-green);
             border: none;
             border-radius: 30px;
@@ -94,16 +93,32 @@
             font-size: var(--md);
             font-weight: bold;
             height: 50px;
-            
+
         }
-        .login-button{
+
+        .login-button {
             margin-bottom: 30px;
             margin-top: 14;
         }
 
+        .reenviar{
+            font-size: var(--sm);
+
+        }
+
+        .reenviar span {
+            color: var(--very-light-pink);
+        }
+
+        .reenviar a {
+            color: var(--hospital-green);
+            text-decoration: none;
+        }
+
+
         @media (max-width: 480px) {
-            .logo{
-                display:block;
+            .logo {
+                display: block;
             }
         }
     </style>
@@ -114,18 +129,20 @@
         <div class="form-container">
             <img src="/media/ExdCode logo.png" alt="Logo" class="logo">
 
-            <h1 class="title">Crea nueva contraseña</h1>
-            <p class="subtitle">Ingrese una nueva contraseña para su cuenta</p>
+            <h1 class="title">El correo electrónico ha sido enviado</h1>
+            <p class="subtitle">
+                Por favor revise su bandeja de entrada para obtener instrucciones sobre cómo restablecer su contraseña
+            </p>
 
-            <form action="#" class="form">
-                <label for="password" class="label">Contraseña</label>
-                <input type="password" id="password" placeholder="********" class="input input-password">
+            <div class="email">
+                <img src="/media/letter_icon-icons.com_67753.svg" alt="Email" class="email-img">
+            </div>
 
-                <label for="new-password" class="label">Confirme contraseña</label>
-                <input type="password" id="new-password" placeholder="********" class="input input-password">
 
-                <input type="submit" value="Confirmar" class="primary-button login-button">
-            </form>
+
+            <button class="primary-button login-button">Login</button>
+
+            <p class="reenviar"> <span>No recibiste el correo?</span> <a href="#">Reenviar</a></p>
 
         </div>
     </div>
