@@ -35,17 +35,47 @@
 
 
 
-        .movil-menu ul{
-            padding: 0;
-            list-style: none;
-            margin-top: 24px 0 0;
-        }
+
         
         .movil-menu a{
             text-decoration: none;
             color: black;
             font-weight: bold;
-            /*margin-bottom: 24px;*/
+
+        }
+
+        .movil-menu ul{
+            padding: 0;
+            list-style: none;
+
+        }
+
+        .movil-menu ul:nth-child(1){
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+
+        .movil-menu ul:nth-child(2){
+            margin-top: 40px;
+
+        }
+        .movil-menu ul:nth-child(3) {
+            position: absolute;
+            bottom: 0;
+        }
+
+        .movil-menu ul li {
+            margin-bottom: 24px;
+        }
+
+
+        .email{
+            font-size: var(--sm);
+            font-weight: 300 !important;
+        }
+
+        .salir{
+            color: var(--hospital-green) !important;
+            font-size: var(--sm);
         }
 
 
