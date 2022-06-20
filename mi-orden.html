@@ -46,12 +46,63 @@
             width: 300px;
         }
 
-        .mi-orden-content{
+        .mi-orden-content {
             display: flex;
             flex-direction: column;
         }
 
+        .orden{
+            background-color:var(--text-input-field);
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 16px;
+            align-items: center;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            padding: 0 24px;
+        }
 
+        .orden p:nth-child(1){
+            display: flex;
+            flex-direction: column;
+        }
+        .orden p:nth-child(2){
+            display: flex;
+            justify-content: end;
+        }
+
+        .orden p span:nth-child(2){
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+        }
+
+
+
+        .compra{
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap: 16px;
+        }
+        .compra figure{
+            margin: 0;
+
+        }
+
+        .compra figure img{
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+        }
+
+        .compra p:nth-child(2){
+            color: var(--very-light-pink);
+        }
+
+        .compra p:nth-child(3){
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        
     </style>
 </head>
 
@@ -61,44 +112,45 @@
         <div class="mi-orden-container">
             <h1 class="title">Mi orden</h1>
             <div class="mi-orden-content">
+                <div class="orden">
                     <p>
                         <span>04.25.2022</span>
                         <span>6 articulos</span>
                     </p>
                     <p>$570.000</p>
 
+                </div>
 
-                
-            </div>
-            <div class="compra">
-                <figure>
-                    <img src="https://images.pexels.com/photos/291759/pexels-photo-291759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Producto">
-                </figure>
-                <p>
-                    Vestido
-                </p>
-                <p>$350.000</p>
-            </div>
-            <div class="compra">
-                <figure>
-                    <img src="https://images.pexels.com/photos/291759/pexels-photo-291759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Producto">
-                </figure>
-                <p>
-                    Vestido
-                </p>
-                <p>$350.000</p>
-            </div>
-            <div class="compra">
-                <figure>
-                    <img src="https://images.pexels.com/photos/291759/pexels-photo-291759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Producto">
-                </figure>
-                <p>
-                    Vestido
-                </p>
-                <p>$350.000</p>
+                <div class="compra">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/291759/pexels-photo-291759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Producto">
+                    </figure>
+                    <p>
+                        Vestido
+                    </p>
+                    <p>$350.000</p>
+                </div>
+                <div class="compra">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/291759/pexels-photo-291759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Producto">
+                    </figure>
+                    <p>
+                        Vestido
+                    </p>
+                    <p>$350.000</p>
+                </div>
+                <div class="compra">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/291759/pexels-photo-291759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Producto">
+                    </figure>
+                    <p>
+                        Vestido
+                    </p>
+                    <p>$350.000</p>
+                </div>
             </div>
         </div>
     </div>
